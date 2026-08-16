@@ -1,0 +1,71 @@
+# Публикация markdown-документов в виде HTML через GitHub Pages.
+# Каждый *.md из корня (кроме readme.md, который становится index.html)
+# конвертируется в одноимённый *.html; ссылка «github-corners» ведёт на исходник —
+# там же в истории коммитов видны все изменения документа.
+name: Deploy documents to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Convert markdown documents to HTML
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --no-save markdown-to-html-cli@4
+          mkdir -p _site
+          cp favicon.png _site/
+          for src in *.md; do
+            name="${src%.md}"
+            if [ "$name" = "readme" ] || [ "$name" = "README" ]; then
+              out="_site/index.html"
+            else
+              out="_site/${name}.html"
+            fi
+            title="$(grep -m1 '^# ' "$src" | sed 's/^# //')"
+            npx markdown-to-html-cli \
+              --source "$src" \
+              --output "$out" \
+              --title "$title" \
+              --favicon favicon.png \
+              --github-corners "https://github.com/${GITHUB_REPOSITORY}/blob/main/${src}"
+            echo "built $out"
+          done
+          ls -la _site
+
+      - name: Upload documents
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

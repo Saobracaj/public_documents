@@ -45,6 +45,8 @@ jobs:
           cp favicon.png _site/
           for src in *.md; do
             name="${src%.md}"
+            # Служебные файлы репозитория — не документы.
+            case "$name" in CLAUDE|AGENTS) continue;; esac
             if [ "$name" = "readme" ] || [ "$name" = "README" ]; then
               out="_site/index.html"
             else

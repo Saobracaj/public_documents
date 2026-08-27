@@ -70,9 +70,13 @@ The AI conversation history is stored with your account so you can return to it;
 
 Our server (API) records standard technical data about requests: IP address, time, requested address, App and OS version (User-Agent), server response. This data serves security, abuse detection and troubleshooting and is kept for a limited time (section 6).
 
-### 3.7. Usage analytics (Firebase Analytics)
+### 3.7. Usage analytics (PostHog)
 
-To understand which features are used and where users run into difficulties, the App uses **Google Analytics for Firebase**. Collected are: screen views, selected events (e.g. test started/finished, sign-in), a pseudonymous App-instance identifier, device model, operating system, language, App version and approximate location at country/city level (derived from the IP address, which is not stored). Analytics **do not contain** your name, e-mail or the content of your answers. In the web version Google Analytics cookies (e.g. `_ga`) are used for this.
+To understand which features are used and where users run into difficulties, the App sends usage events to **PostHog** (PostHog Cloud EU); this data is stored on servers in the European Union (Frankfurt, Germany). Collected are: screen views, selected events (e.g. test started and finished, a question being shown and whether the answer was correct, sign-in, opening a summary), a pseudonymous installation identifier (the same one the App sends to our server), a launch identifier, the operating system and its version, the App version, the interface language and whether Russian-language content is enabled. From the IP address of the request PostHog derives an approximate location at country/city level; we do not use the IP address from analytics for anything else.
+
+Text you type **does not go into analytics**: for search only the query length and the number of results are recorded, for messages only the kind of conversation, for a promo code only whether it was accepted.
+
+While you are signed in, analytics events are linked to your account (user identifier and e-mail address) so that we can also look at usage per account; without signing in, events are tied to the installation only. Analytics uses no cookies (section 12).
 
 ### 3.8. Subscription and payment
 
@@ -92,7 +96,7 @@ If you order a subscription (available only in the web version):
 | Push notifications about group events and replies | device token | consent (the permission you grant in the operating system; revocable in device settings) |
 | Subscription-expiry reminders | e-mail address | legitimate interest; can be switched off in settings |
 | Security, abuse prevention, error diagnostics | 3.6 | legitimate interest of the controller |
-| Usage analytics | 3.7 | legitimate interest in understanding usage and improving the App; in the web version, for analytics cookies — your browser settings |
+| Usage analytics | 3.7 | legitimate interest in understanding usage and improving the App |
 | Question-difficulty statistics | aggregated de-identified data | legitimate interest; the result contains no personal data |
 | Answering your requests | request content, contact | legitimate interest / performance of the contract |
 
@@ -103,8 +107,9 @@ We do not disclose data to third parties for their own purposes. Processing on o
 | Processor | What it does | Data location |
 |---|---|---|
 | EDIS GmbH (Austria) | rented server running our API and database | data centre in **Belgrade, Serbia** |
-| Google Ireland Ltd. / Google LLC | Firebase Authentication (Google/Apple sign-in), Firebase Cloud Messaging (push), Google Analytics for Firebase, Google Cloud Storage (support attachments) | EU (region `europe-west1`, Belgium) for storage; EU/USA for the other services under Google's terms |
+| Google Ireland Ltd. / Google LLC | Firebase Authentication (Google/Apple sign-in), Firebase Cloud Messaging (push), Google Cloud Storage (support attachments) | EU (region `europe-west1`, Belgium) for storage; EU/USA for the other services under Google's terms |
 | Apple Inc. | "Sign in with Apple" | under Apple's terms |
+| PostHog, Inc. | usage analytics (section 3.7) | EU (Frankfurt, Germany) |
 | Anthropic, PBC | processing of AI-assistant requests (3.5) | USA |
 | Resend, Inc. | transactional e-mail (confirmations, codes, orders) | USA / EU |
 | GitHub, Inc. | hosting of these documents and of the web version | USA |
@@ -125,14 +130,14 @@ Our database and server are located in Serbia. Some processors (section 5) proce
 | Support messages and attachments | until account deletion; on your request at deletion time they are removed as well |
 | Orders and subscription periods | 10 years from the end of the business year — the retention period for accounting records under Serbian law; this data is **not deleted** with the account but is detached from your identity (see section 8) |
 | Server technical logs | up to 12 months |
-| Analytics data (Firebase Analytics) | up to 14 months (Google Analytics retention setting) |
+| Analytics data (PostHog) | for as long as needed to analyse usage; data linked to your account is deleted on your request (sections 8 and 9) |
 | Local data on the device | until you delete it yourself |
 
 ## 8. Account deletion
 
 You can delete your account yourself: **Settings → Profile → Delete account** (confirmed with a code sent by e-mail), or by sending a request to <info@gleb.at> from the account's e-mail address. Detailed instructions: <https://docs.saobracaj.gleb.at/delete_account.html>.
 
-On deletion: e-mail, password, name and access rights are irreversibly anonymised; progress, lists, AI conversations, sessions, grants and device data are deleted; group memberships end (a group you founded passes to its longest-standing member or is closed); comments are replaced by a "deleted" marker; support messages remain anonymous unless you also request their removal at deletion time. Order records remain in the accounting records without any link to your identity.
+On deletion: e-mail, password, name and access rights are irreversibly anonymised; progress, lists, AI conversations, sessions, grants and device data are deleted; group memberships end (a group you founded passes to its longest-standing member or is closed); comments are replaced by a "deleted" marker; support messages remain anonymous unless you also request their removal at deletion time. Analytics data (section 3.7) is not deleted automatically — on your request we will delete it as well. Order records remain in the accounting records without any link to your identity.
 
 Local data on the device can be kept at deletion (as guest progress) or deleted — your choice.
 
@@ -162,7 +167,7 @@ The App is intended for people preparing for the driving exam and is not directe
 
 ## 12. Cookies and local storage (web version)
 
-The web version at <https://saobracaj.gleb.at> uses the browser's local storage (localStorage, IndexedDB) for essential functions: keeping your session, settings and local progress — the App cannot work without it, and no consent is required for that. For analytics, Google Analytics for Firebase cookies are used (`_ga` and related, lifetime up to 2 years). You can block analytics cookies in your browser settings or with a tracking-blocker extension; the App will work without them.
+The web version at <https://saobracaj.gleb.at> uses the browser's local storage (localStorage, IndexedDB) for essential functions: keeping your session, settings, local progress and the installation identifier — the App cannot work without it, and no consent is required for that. **We do not use cookies** — neither for analytics nor for advertising: analytics events (section 3.7) are sent directly to PostHog, without cookies and without third-party tracking tools.
 
 ## 13. Changes to this Policy
 
@@ -172,4 +177,4 @@ We may change this Policy from time to time. The current version is always publi
 
 Gleb Klimov — <info@gleb.at> — Telegram [@GlebKl](https://t.me/GlebKl)
 
-_Last updated: 16 August 2026._
+_Last updated: 27 August 2026._

@@ -56,32 +56,35 @@ We reserve the right to remove content that violates these rules without prior n
 
 ### 6.1. Free and paid content
 
-Three question categories ("Basics of traffic safety", "Driver" and "Road") are fully open free of charge, including explanations, summaries and analytics. A paid subscription unlocks that content in the remaining categories and, depending on the tariff, Russian-language content and the AI assistant. The exact scope of each tariff and the prices are shown on the "Tariffs" page before ordering.
+Three question categories ("Basics of traffic safety", "Driver" and "Road") are fully open free of charge, including explanations, summaries, analytics and the Russian materials. Every question, the exam simulation, statistics, search, lists and discussions are free in every category. The paid **Premium** subscription unlocks explanations, summaries, analytics, the Russian materials and the AI assistant in the remaining categories; outside the free categories and without a subscription you see only the beginning of an explanation and, for a summary, its introduction and section titles. The exact scope of the subscription and the prices are shown on the "Tariffs" page before purchase.
 
-### 6.2. Ordering and prices
+### 6.2. Purchase and prices
 
-- A subscription is ordered only in the web version (<https://saobracaj.gleb.at/tariffs>) by a signed-in user. The mobile apps contain no purchases.
-- Prices are stated in **Serbian dinars (RSD)**; the price shown on the "Tariffs" page at the time of ordering is the final amount payable.
-- The subscription is paid **once for the whole chosen period** (1, 6 or 12 months). **There is no automatic renewal and no automatic charging** — when the period ends, access to paid content stops, and we notify you in advance by e-mail (14 and 3 days before; reminders can be switched off).
-- After ordering you receive a **payment slip ("uplatnica") with a payment reference and an IPS QR code**. Payment is made by transfer to our account from your bank. An order is valid for **14 days**; an unpaid order expires automatically after that and can simply be placed again.
+- The subscription is bought **in the mobile app through the App Store or Google Play** by a signed-in user. The web version shows the state of the subscription and the prices for reference, and a purchased subscription works there too.
+- There is one subscription — Premium — sold as access for **1, 3 or 12 months**. The price in your currency, taxes included, is shown by the store at the moment of purchase; that is the final amount payable.
+- Access for **3 and 12 months** is paid once and ends when the period expires, with no automatic renewal or charging. We notify you before the end by e-mail (14 and 3 days before; reminders can be switched off).
+- **Monthly** access is a subscription that **renews automatically** every month until you cancel it in the subscription settings of the App Store or Google Play at least 24 hours before the end of the current period. The charge for the next period is made within 24 hours before it starts.
+- If you already have an active subscription, a purchased period is appended to the end of the current one. Buying 3 or 12 months does not cancel a monthly subscription — you cancel that yourself in the store.
 
 ### 6.3. Conclusion of the contract and start of the period
 
-The subscription contract is concluded when we receive your payment and activate the subscription; we notify you by e-mail. The subscription period runs from activation, or, if you already have an active subscription, is appended to the end of the current period. Payments are booked on business days; if access is not opened within 2 business days of payment, contact <info@gleb.at> quoting the payment reference.
+The subscription contract is concluded when the store confirms the purchase and we activate the subscription on your account; we notify you by e-mail. If access does not open right after the purchase, use "Restore purchases" in the app or contact <info@gleb.at> quoting the transaction identifier from the store.
 
 ### 6.4. Right of withdrawal and refunds
 
-As a consumer you have the right to withdraw from the contract without giving a reason within **14 days from the day the subscription is activated** (Art. 27 of the Serbian Consumer Protection Act). Send the withdrawal notice to <info@gleb.at> from the account's e-mail address, quoting the order's payment reference and the bank account for the refund. We will refund the amount paid by transfer to that account within 14 days of receiving the notice, and the subscription ends at the moment of withdrawal.
-
-After the 14-day period no refund is made, except in the case described in 6.5.
+Payments are taken and refunds are made by the store (Apple or Google) under its own rules; a refund request is filed with the store. As a consumer you have the right to withdraw from the contract without giving a reason within **14 days from the day of purchase** (Art. 27 of the Serbian Consumer Protection Act); file the request with the store, or, if the store does not allow it, send it to <info@gleb.at> with the transaction identifier and we will arrange the refund. The subscription ends at the moment of withdrawal.
 
 ### 6.5. Complaints
 
-If paid content is unavailable or the Service does not work as described, you have the right to file a complaint. Send it to <info@gleb.at> with a description of the problem and the order's payment reference. We respond to a complaint within **8 days** of receipt at the latest and resolve it (fix the problem, extend the subscription period or refund a proportionate part) within 15 days of receipt, in accordance with the Consumer Protection Act.
+If paid content is unavailable or the Service does not work as described, you have the right to file a complaint. Send it to <info@gleb.at> or through the developer chat in the app, with a description of the problem and the transaction identifier. We respond to a complaint within **8 days** of receipt at the latest and resolve it (fix the problem, extend the subscription period or refund a proportionate part) within 15 days of receipt, in accordance with the Consumer Protection Act.
 
-### 6.6. Changes to prices and tariffs
+### 6.6. Extension if you did not pass the exam
 
-We may change prices and the scope of tariffs. Changes do not affect subscription periods already paid for. If a tariff is discontinued, running periods continue until they expire.
+If you did not pass the theory exam while your subscription was active, on your request we **extend the access by one month free of charge**. The request is made through the developer chat in the app (the "I failed the exam" button in the "Subscription" section) no later than 14 days after the subscription ends, stating the exam date; one extension is granted per purchase. This is a gesture of goodwill, not a guarantee of passing and not a ground for a refund.
+
+### 6.7. Changes to prices and tariffs
+
+We may change prices and the scope of the subscription. Changes do not affect periods already paid for. If a period length is discontinued, running periods continue until they expire; a monthly subscription renews at the price in force at the time of renewal, of which the store notifies you.
 
 ## 7. Availability of the Service and liability
 
@@ -107,4 +110,4 @@ You may stop using the App and delete your account at any time. We may terminate
 
 Gleb Klimov — <info@gleb.at> — Telegram [@GlebKl](https://t.me/GlebKl)
 
-_Last updated: 16 August 2026._
+_Last updated: 5 September 2026._

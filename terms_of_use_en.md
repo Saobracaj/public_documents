@@ -61,6 +61,7 @@ Three question categories ("Basics of traffic safety", "Driver" and "Road") are 
 ### 6.2. Purchase and prices
 
 - The subscription is bought **in the mobile app through the App Store or Google Play** by a signed-in user. The web version shows the state of the subscription and the prices for reference, and a purchased subscription works there too.
+- **Payment with a Russian bank card (in roubles)** is available only in the web version, through the payment intermediary **lava.top** (section 6.8). Rouble prices are fixed and shown on the "Tariffs" page before purchase; the amount charged by lava.top is the final amount payable.
 - There is one subscription — Premium — sold as access for **1, 3 or 12 months**. The price in your currency, taxes included, is shown by the store at the moment of purchase; that is the final amount payable.
 - Access for **3 and 12 months** is paid once and ends when the period expires, with no automatic renewal or charging. We notify you before the end by e-mail (14 and 3 days before; reminders can be switched off).
 - **Monthly** access is a subscription that **renews automatically** every month until you cancel it in the subscription settings of the App Store or Google Play at least 24 hours before the end of the current period. The charge for the next period is made within 24 hours before it starts.
@@ -86,6 +87,15 @@ If you did not pass the theory exam while your subscription was active, on your 
 
 We may change prices and the scope of the subscription. Changes do not affect periods already paid for. If a period length is discontinued, running periods continue until they expire; a monthly subscription renews at the price in force at the time of renewal, of which the store notifies you.
 
+### 6.8. Payment through lava.top (Russian bank card)
+
+- Payment with a Russian bank card in roubles is made **in the web version** through the payment intermediary **lava.top** (Lava Top, <https://lava.top>). The payment takes place on the lava.top page; we neither receive nor store your card details.
+- Access for **3 and 12 months** is paid **once** and ends when the period expires, with no automatic renewal or charges.
+- **Monthly** access is a **subscription with automatic renewal**: lava.top charges the same amount every month on the same day until you cancel the subscription. We notify you of every charge by e-mail.
+- You **cancel the subscription in the App at any time** ("Subscription" section → "Manage subscription" → "Cancel subscription"). The cancellation takes effect immediately: there are no further charges, and **access remains until the end of the period already paid for**; no proportionate refund is made for the current period, except in the cases of sections 6.4 and 6.5.
+- While a lava.top subscription is running — including one that has been cancelled but has not yet expired — a new subscription or pass cannot be bought; a new purchase becomes possible once the paid period ends.
+- Sections 6.3–6.6 apply to lava.top payments, with lava.top in the role of the store: send a refund request or a complaint to us at <info@gleb.at> (or through the developer chat) with the payment identifier, and the refund is made through lava.top in accordance with its rules (<https://lava.top>) and the Consumer Protection Act.
+
 ## 7. Availability of the Service and liability
 
 - We strive to keep the Service continuously available but do not guarantee uninterrupted, error-free operation. Interruptions may occur due to maintenance, failures on our side or at our suppliers, or force majeure. We will announce planned longer interruptions when possible.
@@ -110,4 +120,4 @@ You may stop using the App and delete your account at any time. We may terminate
 
 Gleb Klimov — <info@gleb.at> — Telegram [@GlebKl](https://t.me/GlebKl)
 
-_Last updated: 5 September 2026._
+_Last updated: 22 September 2026._

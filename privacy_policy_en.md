@@ -78,6 +78,8 @@ Text you type **does not go into analytics**: for search only the query length a
 
 While you are signed in, analytics events are linked to your account (user identifier and e-mail address) so that we can also look at usage per account; without signing in, events are tied to the installation only. Analytics uses no cookies (section 12).
 
+**Where installs come from.** Some of our links to the App go through an address like `saobracaj.gleb.at/go/…` (a social media post, a driving school, a flyer), so that we know which place brings users. When such a link is followed, our server records which link it was, the platform (Android, iOS, web), the browser's User-Agent and the IP address (for IPv6, only the network part of the address) and redirects you to Google Play, the App Store or the web version. When the App is then launched for the first time, the server ties the click to the installation: on Android through the click identifier Google Play hands back to the App (the install referrer); on iOS, and when an already installed App is opened, by comparing the network (IP address) and the time of the click and of the launch. The IP addresses of launches are compared, never stored; the IP address and User-Agent of a click are deleted after 48 hours. If you later sign in, the link you came through is recorded for your account, so that sign-ups and purchases can be counted per source. This data serves aggregate statistics per link only; we do not use it for advertising and do not pass it to third parties (other than the analytics events in PostHog described above).
+
 ### 3.8. Subscription and payment
 
 If you order a subscription (available only in the web version):
@@ -97,6 +99,7 @@ If you order a subscription (available only in the web version):
 | Subscription-expiry reminders | e-mail address | legitimate interest; can be switched off in settings |
 | Security, abuse prevention, error diagnostics | 3.6 | legitimate interest of the controller |
 | Usage analytics | 3.7 | legitimate interest in understanding usage and improving the App |
+| Statistics per source link (where installs, sign-ups and purchases come from) | section 3.7, «Where installs come from» | legitimate interest in knowing which channels bring users |
 | Question-difficulty statistics | aggregated de-identified data | legitimate interest; the result contains no personal data |
 | Answering your requests | request content, contact | legitimate interest / performance of the contract |
 
@@ -131,6 +134,7 @@ Our database and server are located in Serbia. Some processors (section 5) proce
 | Orders and subscription periods | 10 years from the end of the business year — the retention period for accounting records under Serbian law; this data is **not deleted** with the account but is detached from your identity (see section 8) |
 | Server technical logs | up to 12 months |
 | Analytics data (PostHog) | for as long as needed to analyse usage; data linked to your account is deleted on your request (sections 8 and 9) |
+| IP address and User-Agent of a click on a source link | 48 hours; the click itself and its link to an installation remain as aggregate statistics, and the link between an account and a device is deleted with the account |
 | Local data on the device | until you delete it yourself |
 
 ## 8. Account deletion
@@ -177,4 +181,4 @@ We may change this Policy from time to time. The current version is always publi
 
 Gleb Klimov — <info@gleb.at> — Telegram [@GlebKl](https://t.me/GlebKl)
 
-_Last updated: 27 August 2026._
+_Last updated: 29 September 2026._
